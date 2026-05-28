@@ -1,0 +1,29 @@
+table { 
+    table-layout: fixed;
+    width: 90%;
+    margin: 10px auto;
+    border-collapse: collapse;
+    border-width: 1px; 
+    border-color: black; 
+    border-style: solid;
+    
+    width: 100%
+    
+}
+table th {
+    padding: 4x;
+    border: 1px solid black
+
+}
+table tr {
+    padding: 4x;
+    border-bottom: 1px solid black
+  
+
+}
+table td {
+    padding: 4px;
+    border: 1px solid black
+   
+
+}
