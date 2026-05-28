@@ -1,5 +1,5 @@
 table { 
-    table-layout: fixed;
+    table-layout: auto;
     width: 90%;
     margin: 10px auto;
     border-collapse: collapse;
@@ -11,18 +11,18 @@ table {
     
 }
 table th {
-    padding: 4x;
+    padding: 4px;
     border: 1px solid black
 
 }
 table tr {
-    padding: 4x;
+    padding: 4px;
     border-bottom: 1px solid black
   
 
 }
 table td {
-    padding: 4px;
+    padding: 4ppx;
     border: 1px solid black
    
 
