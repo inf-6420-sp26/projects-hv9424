@@ -1,0 +1,18 @@
+ body {font-size: 100%
+    margin-left: 2em;
+    margin-right: 2em;
+    font-family: Arial;
+    
+}
+
+h3 {color: grey;}
+&lt {color: blue}
+&gt {color: blue}
+ img {
+  max-width: 75%;
+  height: auto;
+  vertical-align: middle;
+  margin-right: .5em;
+  padding-bottom: .5em;
+}
+
