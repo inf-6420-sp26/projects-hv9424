@@ -1,0 +1,278 @@
+* {
+  box-sizing: border-box;
+}
+
+/* rules for screens 768px and wider */
+@media (min-width: 768px) {
+  .flex-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .flex-column {
+    flex-basis: 50%;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+  }
+
+  .basic-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+/* rules for screens 1200px and wider */
+@media (min-width: 1200px) {
+  .flex-column {
+    flex-basis: 25%;
+  }
+  .basic-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height:100vh;
+    margin: 0;
+    line-height: 1.5;
+    background-color: #e8daaa;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.container {
+     max-width: 900px;
+    margin: 0 auto;
+    padding: 1px;
+
+}
+
+.basic-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 0;
+
+}
+
+
+.complex-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    gap: 20px;
+}
+
+.header{
+    border-radius: 20px;
+    grid-column: span 4;
+    color:aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../images/cats.jpg");
+    background-size: cover;
+    background-position: center;
+     margin-left: 0;
+    padding-left: 20px;
+    text-align: left;
+    
+}
+
+.home-page .sidebar{
+    grid-column: span 4;
+}
+
+.home-page .featured {
+    grid-column: span 4;
+}
+
+.home-page .image-container {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.home-page .image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.sidebar{
+    border-radius: 20px;
+    grid-row: span 3;
+    color: black;
+    font-size:larger
+   
+}
+
+.guide-page .sidebar {
+    padding: 10px;
+    font-size: 0.9rem;
+    background-color:;
+
+}
+
+.featured {
+    border-radius: 10px;
+    grid-column: span 2;
+    grid-row: span 3;
+    background-color: ;
+}
+
+.item {
+    
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+h2 {
+    color: brown;
+}
+
+a {color: lightseagreen;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+
+a:hover, 
+a:focus {
+    border-bottom-color: lightblue;
+    color: lightblue;
+    outline: none;
+}
+
+nav {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.nav-link {
+    color: #ffff;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+
+}
+
+.nav-link:hover,
+.nav-link:focus{
+    border-bottom-color: lightblue;
+    color: lightblue;
+    outline: none;
+
+}
+
+.image-container{
+    width:100%;
+    max-width: 400px;
+   margin: 0 auto;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+
+}
+
+  article {
+    border-radius: 10px;
+    padding: 10px;
+    background-color:aliceblue; 
+  }
+
+.feedback-page .featured{
+    border-radius: 20px;
+    grid-column: span 2;
+    grid-row: span 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback-page .featured .container {
+    width: 100%;
+    max-width: 600px;
+}
+
+.feedback-page h3 {
+    text-align: center;
+}
+form{
+    width: 100%;
+    max-width: 600px;
+}
+
+textarea {
+    width: 100%;
+    padding: .2em;
+    height: 5em;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+label {
+    display: block;
+    margin-bottom: .25em;
+}
+
+input{
+    width: 50%;
+    font-size: inherit;
+    padding: .4em;
+    margin-bottom: .5em;
+}
+
+button {
+    font-size: inherit;
+    font-weight: bold;
+    width: 8em;
+    padding: .5em;
+    color: white;
+    background-color: lightpink
+}
+
+button:hover{
+    color:aquamarine;
+    background-color:azure;
+}
+
+input,button {
+    border-radius: 5px;
+}
+
+.footer { 
+    grid-column: span 4;
+    color: white;
+    margin: 0;
+    background-color: gray;
+     font-family: Arial, Helvetica, sans-serif;
+     
+
+}
+
+.footer a {
+    display: inline-flex;
+    fill: white;
+    
+}
+
+.footer a svg {
+    display: inline-flex;
+    fill: white;
+    width: 24px;
+    height: 24px;
+}
+
+.footer p { 
+    display: flex;
+    margin: 5px;
+    font-size: small;
+}
+
